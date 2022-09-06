@@ -83,7 +83,7 @@
 		        <version>3.0.0-M5</version>
                 <configuration>
                     <argLine>
-                    --add-opens app/app=ALL-UNNAMED --add-exports javafx.graphics/com.sun.javafx.application=ALL-UNNAMED
+                    --add-opens haavasny.calc/haavasny.calc=ALL-UNNAMED --add-exports javafx.graphics/com.sun.javafx.application=ALL-UNNAMED
                     </argLine>
                 </configuration>
 	        </plugin>
@@ -95,7 +95,7 @@
                 <!-- Default configuration for running -->
                 <!-- Usage: mvn javafx:run -->
                 <configuration>
-                    <mainClass>haavasny.calc.CalcApp</mainClass>
+                    <mainClass>haavasny.calc/haavasny.calc.CalcApp</mainClass>
                 </configuration>
             </plugin>
         </plugins>

@@ -74,7 +74,12 @@ public class Calc {
      */
     public double performOperation(UnaryOperator<Double> op) throws IllegalStateException {
         // TODO
-        return 0.0;
+        if(getOperandCount() == 0) {
+            throw new IllegalStateException("The stack is empty");
+        }
+        double num = op.apply(this.popOperand());
+        this.pushOperand(num);
+        return num;
     }
 
     /**
@@ -103,6 +108,14 @@ public class Calc {
      */
     public void swap() {
         // TODO        
+        if (getOperandCount() < 2) {
+            throw new IllegalStateException("Can not swap");
+        }
+        double op2 = this.popOperand();
+        double op1 = this.popOperand();
+        pushOperand(op2);
+        pushOperand(op1);
+
     }
 
     /**
@@ -112,5 +125,9 @@ public class Calc {
      */
     public void dup() {
         // TODO
+        if (getOperandCount() == 0) {
+            throw new IllegalStateException("Empty stack");
+    }
+    pushOperand(this.peekOperand());
     }
 }
