@@ -1,4 +1,4 @@
-package app;
+package haavasny.calc;
 
 import java.util.ArrayList;
 import java.util.List;

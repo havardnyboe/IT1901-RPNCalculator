@@ -1,4 +1,4 @@
-package app;
+package haavasny.calc;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

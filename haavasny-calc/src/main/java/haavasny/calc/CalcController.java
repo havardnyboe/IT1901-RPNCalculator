@@ -1,4 +1,4 @@
-package app;
+package haavasny.calc;
 
 import java.util.List;
 import java.util.function.BinaryOperator;
@@ -10,11 +10,11 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Labeled;
 import javafx.scene.control.ListView;
 
-public class AppController {
+public class CalcController {
 
     private Calc calc;
 
-    public AppController() {
+    public CalcController() {
         calc = new Calc(0.0, 0.0, 0.0);
     }
 
